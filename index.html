@@ -2,83 +2,43 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio - Sara Truffi</title>
+    <title>Home - Sara Truffi Portfolio</title>
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0;}
       
-      body {
-        background: #fcfaf5;
-        font-family: Arial, sans-serif;
-      }
-      
-      .container { 
-        max-width: 1200px; 
-        margin: 0 auto; 
-        padding: 20px; 
-        background: #fcfaf5;
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
       }
       
-      nav ul { 
-        list-style: none; 
-      }
-      nav ul li { 
-        display: inline; 
-        margin-right: 20px; 
-      }
-      nav a { 
-        text-decoration: none; 
-        font-family: Arial; 
-        font-size: 18px; 
-        color: #d14f9c; 
+      nav ul { list-style: none; }
+      nav ul li { display: inline; margin-right: 20px; }
+      nav a {
+        text-decoration: none;
+        font-family: Open Sans, sans-serif;
+        font-size: 18px;
+        color: #d14f9c;
         padding: 6px 10px;
       }
-      nav a:hover {color: #ffb6db;}
-      nav a:active { color: #aa2f79; }
-      nav a:visited { color: #c6428f; }
       
-      h1 { 
-        margin: 30px 0; 
-      }
+      nav a:hover { color: #ffb6db;}
+      nav a:active { color: #aa2f79;}
+      nav a:visited { color: #c6428f;}
       
-      .image-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        grid-auto-flow: dense;
-      }
-      
-      .image-grid img {
+      .home-image {
         width: 100%;
-        height: 350px;
-        object-fit: cover;
-        border-radius: 12px;
-        transition: transform 0.35s ease, box-shadow 0.35s ease;
-      }  
-      
-      .image-grid a:hover img {
-        transform: scale(1.05);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
-      }
-      
-      .image-grid a {
         display: block;
-        overflow: hidden;
-        border-radius: 12px;
       }
       
-      .video-wrapper {
-        width: 100%;
-        height: 350px;
-        overflow: hidden;
-        border-radius: 12px;
+      .home-text {
+        text-align: center;
+        padding: 60px 0;
       }
       
-      .video-wrapper iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-        display: block;
+      .home-text h1 {
+        font-size: 2em;
+        color: #d14f9c;
+        font-family: Arial, sans-serif;
       }
       
       footer {
@@ -87,41 +47,30 @@
         text-align: center;
         padding: 20px 0;
         margin-top: 40px;
-        font-family: Arial, sans-serif;
+        font-family: Open Sans, sans-serif;
       }
+
     </style>
+    
   </head>
-  
   <body>
-  <div class="container">
-    <nav>
-      <ul>
+  
+    <div class="container">
+      <nav>
+        <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="PORTFOLIO.HTML/index.html">Portfolio</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="contact.html">Contact Me</a></li>
-      </ul>
-    </nav>
-   <h1>My Projects</h1>
-   <div class="image-grid">
-     <a href="project1.html">
-       <img src="project1.png" alt="Annabelle Re-brand Project">
-     </a>
-     <a href="project2.html">
-       <img src="project2.png" alt="Collection of Posters">
-     </a>
-     <a href="project3.html">
-       <img src="project3img.png" alt="Magazine">
-     </a>
-   
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/tvKXRcJorEA"
-          allowfullscreen>
-        </iframe>
-      </div>
+        </ul>
+      </nav>
     </div>
-</div>
-    
+  <img src="homePage.png" alt="Sara Truffi Home Page" class="home-image">
+  <div class="container">
+    <section class="home-text">
+      <h1>Welcome to my design portfolio. Explore my projects, learn more about me, or get in touch!</h1>
+    </section>
+    </div>
     <footer>@ 2025 Sara Truffi - All Rights Reserved</footer>
   </body>
 </html>
